@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="" content="">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>your account </title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                background-color:#181717;
+            }
+            input{
+                height: 30px;
+                width: 250px;
+                background: none;
+                border: solid #b94a3e 1px;
+                border-radius: 5px;
+                color: #b94a3e;
+                display: block;
+                margin: 20px;
+                margin-left: 41% ;
+                text-align: center;
+                align-items: center;
+            }
+            h3,p{
+                color: #b94a3e;
+                text-align: center;
+                margin-top: 90px;
+            }
+            @media screen and (max-width:425px){
+                input{
+                    margin:auto;
+                    margin-top: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Your Code</h3>
+        <form action="" onsubmit="return validateform()">
+            <label><input type="password" name="your code"></label>
+            <input type="submit" >
+        </form>
+        <p>write rour code for open <b>your acount</b></p>
+    <script>
+        function validateform() {
+            var yourcode = document.getElementsByName("your code")[0].value;
+            if(yourcode == "ahmedsa3ka"){
+                window.open("khalid.html")
+            }
+        }
+    </script>
+    </body>
+</html>
